@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="数学里的正则">
+<meta name="description" content="对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。 正则性 regularity首先介绍正则性。数学中又分方程中的正则性和实">
 <meta property="og:type" content="article">
-<meta property="og:title" content="术语“正则”研究">
+<meta property="og:title" content="“正则”含义研究">
 <meta property="og:url" content="http://example.com/2022/11/17/regular/index.html">
 <meta property="og:site_name" content="Jingyu">
-<meta property="og:description" content="数学里的正则">
+<meta property="og:description" content="对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。 正则性 regularity首先介绍正则性。数学中又分方程中的正则性和实">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-11-17T07:21:32.982Z">
-<meta property="article:modified_time" content="2022-11-17T07:31:40.347Z">
+<meta property="article:modified_time" content="2022-11-17T12:40:35.720Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>术语“正则”研究 | Jingyu</title>
+  <title>“正则”含义研究 | Jingyu</title>
   
 
 
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">术语“正则”研究</h1>
+          <h1 class="post-title" itemprop="name headline">“正则”含义研究</h1>
         
 
         <div class="post-meta">
@@ -299,7 +299,19 @@
       
 
       
-        <h2 id="数学里的正则"><a href="#数学里的正则" class="headerlink" title="数学里的正则"></a>数学里的正则</h2>
+        <p>对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。</p>
+<h2 id="正则性-regularity"><a href="#正则性-regularity" class="headerlink" title="正则性 regularity"></a>正则性 regularity</h2><p>首先介绍正则性。数学中又分方程中的正则性和实分析中的正则性，都来自英文regularity，但两者含义不同。方程中的正则性，简单来说，对于方程 $Lu&#x3D;f$，我们原本想要在空间$X$中找到解，但是$X$的性质太差很难找，所以我们在一个更弱的、性质更好的空间$Y$中找到解$u\in Y$，然后证明在某种条件下，这个解的确在$X$中，证明解存在在$X$中的这一步叫正则性。正则性一般用来刻画函数的光滑程度，正则性越高，函数的光滑性越好。</p>
+<p>分析里，比如正则测度regular measure，拓扑空间上的正则测度是指每个可测集都可以从上方用开可测集逼近，从下方用紧致可测集逼近的测度，有点太专业了，还是赶紧转到神经网络里的正则化吧。</p>
+<h2 id="正则化-regularization"><a href="#正则化-regularization" class="headerlink" title="正则化 regularization"></a>正则化 regularization</h2><p>神经网络模型训练中，通常往损失函数里添加一个正则化项（主要分为L1正则和L2正则，L2正则用得多），来防止过拟合。起作用的原因是通过往函数里增加一个额外的项之后，每一项的系数参数更有可能取更小的值，抗数据干扰能力提升，能够显著降低过拟合现象。感觉这个正则一词的使用像是来源于微分方程。</p>
+<h2 id="正则表达式-regular-expression"><a href="#正则表达式-regular-expression" class="headerlink" title="正则表达式 regular expression"></a>正则表达式 regular expression</h2><p>根据《计算机科学技术名词》（第三版），正则表达式的定义为使用正则运算从原子语言构造一般语言的形式描述。对一个字母表中的各个字符，连同空串符和空集符，通过有限多次使用‘+’或‘｜’运算、‘.’运算以及‘*’运算等运算符连接起来的式子称为∑上的一个正规表达式，台湾译法为正规表达式。我就说它在乱搞！这和以上所有正经的正则有什么关系，希望所有翻译速速改成正规表达式，正规匹配。</p>
+<h2 id="正则语言-regular-language"><a href="#正则语言-regular-language" class="headerlink" title="正则语言 regular language"></a>正则语言 regular language</h2><p>以上的几个正则使用方法都是我在数学系或者计算机系学习的过程中碰到过的用法，鉴于我没念过物理或者化学专业，物化里的canonical就不去调查了，最后出于私心学习一下语言学里的正则语言。正则语言，定义是某个有限自动机可以识别的语言。听起来像是离散数学里会定义的那种最小单位的语言，看起来和正经的正则也没什么关系，干脆改名叫正规语言得了。不过说到有限自动机，加上正则表达式，倒是让人想起力扣刷动态规划题的时候会刷到的一类很恶心的匹配题，这一类本该翻译成“正规”的正则倒是又自生一派了。</p>
+<h2 id="非常不规范的参考文献"><a href="#非常不规范的参考文献" class="headerlink" title="非常不规范的参考文献"></a>非常不规范的参考文献</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/59869935">https://www.zhihu.com/question/59869935</a></li>
+<li><a target="_blank" rel="noopener" href="https://maristie.com/2018/02/Normalization-Standardization-and-Regularization">https://maristie.com/2018/02/Normalization-Standardization-and-Regularization</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.termonline.cn/word/69555/1#s1">https://www.termonline.cn/word/69555/1#s1</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhouyifan.net/2019/06/23/Theory-of-Computation-Review1/">https://zhouyifan.net/2019/06/23/Theory-of-Computation-Review1/</a></li>
+</ol>
+
       
     </div>
     
@@ -429,7 +441,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E9%87%8C%E7%9A%84%E6%AD%A3%E5%88%99"><span class="nav-number">1.</span> <span class="nav-text">数学里的正则</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E6%80%A7-regularity"><span class="nav-number">1.</span> <span class="nav-text">正则性 regularity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E5%8C%96-regularization"><span class="nav-number">2.</span> <span class="nav-text">正则化 regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-regular-expression"><span class="nav-number">3.</span> <span class="nav-text">正则表达式 regular expression</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%AF%AD%E8%A8%80-regular-language"><span class="nav-number">4.</span> <span class="nav-text">正则语言 regular language</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E5%B8%B8%E4%B8%8D%E8%A7%84%E8%8C%83%E7%9A%84%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">5.</span> <span class="nav-text">非常不规范的参考文献</span></a></li></ol></div>
             
 
           </div>
