@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。 正则性 regularity首先介绍正则性。数学中又分方程中的正则性和实">
+<meta name="description" content="对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“正则”含义研究">
-<meta property="og:url" content="http://example.com/2022/11/17/regular/index.html">
+<meta property="og:url" content="https://jingyu01.github.io/2022/11/17/regular/index.html">
 <meta property="og:site_name" content="Jingyu">
-<meta property="og:description" content="对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。 正则性 regularity首先介绍正则性。数学中又分方程中的正则性和实">
+<meta property="og:description" content="对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-11-17T07:21:32.982Z">
-<meta property="article:modified_time" content="2022-11-17T12:53:44.191Z">
+<meta property="article:modified_time" content="2022-11-21T08:38:26.175Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -99,7 +99,7 @@
     root: '',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -119,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2022/11/17/regular/"/>
+  <link rel="canonical" href="https://jingyu01.github.io/2022/11/17/regular/"/>
 
 
 
@@ -181,7 +181,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -191,7 +191,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -201,7 +201,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -242,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/17/regular/">
+    <link itemprop="mainEntityOfPage" href="https://jingyu01.github.io/2022/11/17/regular/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -310,6 +310,8 @@
 
       
         <p>对“正则”这个词感到很困惑，比如数学里正则性的和计算机里的正则表达式完全不是一个意思，所以准备找找这个词的各种含义。数学和计算机里的正则这个词主要是从regular及其变体翻译过来的，物理化学学科的正则主要从canonical翻译过来，语言学中也有regular language正则语言，本文主要写数学和计算机中正则的含义。</p>
+<span id="more"></span>
+
 <h2 id="正则性-regularity"><a href="#正则性-regularity" class="headerlink" title="正则性 regularity"></a>正则性 regularity</h2><p>首先介绍正则性。数学中又分方程中的正则性和实分析中的正则性，都来自英文regularity，但两者含义不同。方程中的正则性，简单来说，对于方程 $Lu&#x3D;f$，我们原本想要在空间$X$中找到解，但是$X$的性质太差很难找，所以我们在一个更弱的、性质更好的空间 $Y$ 中找到解$u\in Y$，然后证明在某种条件下，这个解的确在$X$中，证明解存在在$X$中的这一步叫正则性。正则性一般用来刻画函数的光滑程度，正则性越高，函数的光滑性越好。</p>
 <p>分析里，比如正则测度regular measure，拓扑空间上的正则测度是指每个可测集都可以从上方用开可测集逼近，从下方用紧致可测集逼近的测度，有点太专业了，还是赶紧转到神经网络里的正则化吧。</p>
 <h2 id="正则化-regularization"><a href="#正则化-regularization" class="headerlink" title="正则化 regularization"></a>正则化 regularization</h2><p>神经网络模型训练中，通常往损失函数里添加一个正则化项（主要分为L1正则和L2正则，L2正则用得多），来防止过拟合。起作用的原因是通过往函数里增加一个额外的项之后，每一项的系数参数更有可能取更小的值，抗数据干扰能力提升，能够显著降低过拟合现象。感觉这个正则一词的使用像是来源于微分方程。</p>
@@ -405,7 +407,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name"></p>
-              <p class="site-description motion-element" itemprop="description">白马啸西风</p>
+              <p class="site-description motion-element" itemprop="description">learn for fun</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -413,7 +415,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
